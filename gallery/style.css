@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0
+}
+.active{  color: #fff;
+    border-bottom: 1px solid white !important;}
+/* FOR NAVBAR */
+
+#checkbox {
+    display: none;
+}
+
+.toggle {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition-duration: .5s;
+
+}
+
+.bars {
+    width: 100%;
+    height: 4px;
+    background-color: rgb(244, 231, 255);
+    border-radius: 4px;
+}
+
+#bar2 {
+    transition-duration: .8s;
+}
+
+#bar1,
+#bar3 {
+    width: 100%;
+}
+
+#checkbox:checked+.toggle .bars {
+    position: absolute;
+    transition-duration: .5s;
+}
+
+#checkbox:checked+.toggle #bar2 {
+    transform: scaleX(0);
+    transition-duration: .5s;
+}
+
+#checkbox:checked+.toggle #bar1 {
+    width: 100%;
+    transform: rotate(45deg);
+    transition-duration: .5s;
+}
+
+#checkbox:checked+.toggle #bar3 {
+    width: 100%;
+    transform: rotate(-45deg);
+    transition-duration: .5s;
+}
+
+#checkbox:checked+.toggle {
+    transition-duration: .5s;
+    transform: rotate(180deg);
+}
+
+nav {
+    background: black;
+}
+
+nav ul {
+    margin-right: 1%;
+
+
+}
+.dropdown-menu {
+    width:320px; /* Set a maximum width for the dropdown menu */
+}
+
+
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    background: rgb(0, 0, 0)
+}
+
+.dropdown:hover .dropdown-menu:focus {
+    display: block;
+    background: rgb(0, 0, 0)
+}
+
+
+
+
+
+.dropdown-item span {
+    color: rgb(255, 231, 231)
+}
+
+.dropdown-item span:hover {
+    border-bottom: 1px solid rgb(12, 11, 11);
+    color: black
+}
+
+
+.drpdwn_img {
+    border-radius: 10px;
+}
+
+
+.nav-link {
+    font-size: 20px;
+    transition: 0.5s ease-in;
+    padding: 7px 10px 1px 7px;
+    color: white;
+}
+
+.nav-link:hover {
+    color: #fff;
+    border-bottom: 1px solid white;
+
+}
+
+.nav-link:focus {
+    color: #ffff !important;
+}
+
+.logo {
+    margin-left: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 25px;
+
+
+}
+
+#mynavbar {
+    background: black
+}
+
+.navbar-nav a {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.navbar-light .navbar-brand {
+    color: #fff;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:hover {
+    color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #fff;
+}
+
+.w-100 {
+    height: 100vh;
+}
+
+.navbar-toggler {
+    padding: 1px 5px;
+    font-size: 18px;
+    line-height: 0.3;
+    background: #000000;
+    border: 1px solid white
+}
+
+.toggle {
+    display: none
+}
+.dropdown-item{color:#fff}
+
+* {
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .bg-light {
+    background-color: transparent !important;
+  }
+/* NAVBAR END */
+/* GALLERY WELCOME */
+.gallery_welcome {
+    height: 170px
+}
+
+.gallery_welcome_msg {
+    margin-top: 70px;
+    font-size: 36px;
+    font-family: cursive;
+}
+
+/* IMAGE GALLERY CSS START */
+img {
+    max-width: 100%
+}
+
+.gallery img {
+    background-color: white;
+    padding: 15px;
+    width: 100%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    cursor: pointer
+}
+.gallery-item {
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: scale(1.1);
+}
+
+/* IMAGE GALLERY CSS END */
+/* GALLERY MODAL */
+#gallery-modal .modal-img {
+    width: 100%
+}
+
+/* GALLERY MEND */
+/* .footer {} */
+.footer_text {
+    line-height: 40px;
+}
+
+.footer_text2 {
+    margin-left: 190px
+}
+
+.footer {
+    height: 500px
+}
+footer li a:hover{border-bottom:1px solid  white}
+
+@media only screen and (max-width: 760px) {
+    .toggle {
+      display: flex
+    }
+  
+    .navbar-nav {
+      text-align: center;
+      background: rgba(0, 0, 0, 0.5);
+    
+    }
+    .gallery img {
+        background-color: white;
+        padding: 15px;
+        width: 80%;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+        cursor: pointer;
+        margin-left:10%
+    }}
